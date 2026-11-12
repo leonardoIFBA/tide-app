@@ -1,6 +1,6 @@
 <template>
   <div>
-    <layout1 />
+    <layout4 />
   </div>  
 </template>
 
