@@ -35,7 +35,7 @@ import axios from 'axios';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
-const API_URL = 'http://localhost:8080/tide-api/ocorrencias/proximas';
+const API_URL = 'https://tide-api-c6t2.onrender.com/tide-api/ocorrencias/proximas';
 
 const raioBusca = ref(5000); 
 const carregandoGps = ref(false);
