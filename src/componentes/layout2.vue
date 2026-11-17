@@ -66,7 +66,7 @@ import { ref, onMounted, watch } from 'vue';
 import axios from 'axios';
 
 // URL base da sua API Java (Spring Boot)
-const API_URL = 'http://localhost:8080/tide-api/ocorrencias';
+const API_URL = 'https://tide-api-c6t2.onrender.com/tide-api/ocorrencias';
 
 const carregandoGps = ref(false);
 const raioBusca = ref(5000); // Alterado para 5km padrão para ver todos os dados fictícios de Brumado

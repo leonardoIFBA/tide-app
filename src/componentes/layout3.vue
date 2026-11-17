@@ -29,7 +29,7 @@
 import { ref, onMounted, nextTick } from 'vue';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8080/tide-api/ocorrencias/proximas';
+const API_URL = 'https://tide-api-c6t2.onrender.com/tide-api/ocorrencias';
 
 const raioBusca = ref(5000); // Raio padrão de 5km
 const carregandoGps = ref(false);
