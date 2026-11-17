@@ -1,6 +1,9 @@
 <template>
   <div class="container">
     <h1>📍 Sistema TIDE - Registro de Ocorrências</h1>
+    <div>
+      <MapaOcorrencias />
+    </div>
 
     <!-- SEÇÃO 1: REGISTRAR NOVA OCORRÊNCIA -->
     <div class="card">
@@ -58,9 +61,10 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
+import MapaOcorrencias from './MapaOcorrencias.vue';
 
 // URL base da sua API Java (Spring Boot)
-const API_URL = 'http://localhost:8080/tide-api/ocorrencias';
+const API_URL = 'https://tide-api-c6t2.onrender.com/tide-api/ocorrencias';
 
 const carregandoGps = ref(false);
 const raioBusca = ref(1000); // 1000 metros (1km) padrão
